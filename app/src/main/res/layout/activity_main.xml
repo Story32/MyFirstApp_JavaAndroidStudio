@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<!--<Button-->
+<!--    android:text="Enter"-->
+<!--    android:id="@+id/btn_mybutton"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"/>-->
+
+
+<LinearLayout
+    android:layout_width="410dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="Name"/>
+    <EditText
+        android:id="@+id/inp_name"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:text="Enter"
+        android:id="@+id/btn_mybutton"
+        android:layout_width="90dp"
+        android:layout_height="40dp"/>
+
+
+</LinearLayout>
+    <TextView
+        android:background="@color/teal_200"
+        android:minWidth="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_box"/>
+
+</LinearLayout>
