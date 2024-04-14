@@ -1,44 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical">
-<!--<Button-->
-<!--    android:text="Enter"-->
-<!--    android:id="@+id/btn_mybutton"-->
-<!--    android:layout_width="wrap_content"-->
-<!--    android:layout_height="wrap_content"/>-->
 
-
-<LinearLayout
-    android:layout_width="410dp"
-    android:layout_height="wrap_content">
+    <!-- Overskrift -->
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="30dp"
-        android:text="Name"/>
-    <EditText
-        android:id="@+id/inp_name"
-        android:layout_width="175dp"
-        android:layout_height="wrap_content"
-        />
-    <Button
-        android:text="Enter"
-        android:id="@+id/btn_mybutton"
-        android:layout_width="90dp"
-        android:layout_height="40dp"/>
-
-
-</LinearLayout>
-    <TextView
-        android:background="@color/teal_200"
-        android:minWidth="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_box"/>
+        android:text="ToDo-Liste"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Beskrivelsestekst -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Her kan du tilføje opgaver til din liste"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- EditText for at indtaste opgaver -->
+    <EditText
+        android:id="@+id/edit_text_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Indtast opgave..."
+        android:padding="16dp"/>
+
+    <!-- Knappen til at tilføje en ny opgave -->
+    <Button
+        android:id="@+id/btn_add_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tilføj opgave"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Knappen til at vise opgaver -->
+    <Button
+        android:id="@+id/btn_show_tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vis opgaver"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- ListView til at vise opgaver -->
+    <ListView
+        android:id="@+id/list_view_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"/> <!-- Starter med at skjule ListView -->
 
 </LinearLayout>
